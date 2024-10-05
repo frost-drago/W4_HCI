@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/javajam.css">
+    <title>JavaJam House Jobs</title>
+</head>
+<body>
+<div id="wrapper">
+
+    <!-- Wire-frame header -->
+    <header>
+        <h1>JavaJam Coffee House</h1>
+    </header>
+
+    <!-- Wire-frame navigation -->
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+    </nav>
+
+    <!-- Wire-frame main content -->
+    <main>
+        <h2>Jobs at JavaJam</h2>
+        <p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk(*).</p>
+        <form method="post" action="http://webdevbasics.net/scripts/javajam8.php">
+                <label for="name">*Name:</label>
+                <input id="name" type="text" required>
+                <br>
+
+                <label for="e_mail">*E-mail:</label>
+                <input id="e_mail" type="email" required>
+                <br>
+
+                <label for="experience">*Experience:</label>
+                <textarea id="experience" rows="5" required></textarea>
+                <br>
+
+                <label for="job_position">Select job position:</label>
+                <select id="job_position" name="job_position">
+                    <option value="barista">Barista</option>
+                </select>
+                <br>
+
+                <label for="interview_datetime">Preferred Interview Date and Time:</label>
+                <br>
+                <input id="interview_datetime" type="datetime-local">
+                <br>
+
+                <label for="applicant_photo">Upload your photo:</label>
+                <input id="applicant_photo" type="file" accept="image/*">
+                <br>
+
+                <button type="submit">Apply Now</button>
+        </form>
+    </main>
+
+    <!-- Wire-frame footer -->
+    <footer>
+        <p>Copyright &copy; 2021 JavaJam Coffee House</p>
+        <p>yourfirstname@yourlastname</p>
+    </footer>
+</div>
+</body>
+</html>
